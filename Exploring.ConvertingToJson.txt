@@ -1,0 +1,81 @@
+$Manifesto = [PSCustomObject]@{
+Title = "Agile Manifesto"
+Line = [ordered]@{
+1 = "We are uncovering better ways of developing software by doing it and helping others do it."
+2 = "Through this work we have come to value:"
+3 = "Individuals and interactions over processes and tools"
+4 = "Working software over comprehensive documentation"
+5 = "Customer collaboration over contract negotiation"
+6 = "Responding to change over following a plan"
+7 = "That is, while there is value in the items on the right, we value the items on the left more."
+}
+}
+
+$Content = ""; for ( $n = 0; $n -lt $Manifesto.Line.Count; $n++ ) {
+$Line = $Manifesto.Line.$n
+$Content += $Line + " "
+}
+
+$Lines = $Manifesto.Line
+
+$Content = $Lines.1 + " " + $Lines.2 + " (1) " + $Lines.3 + "; (2) " + $Lines.4 + "; (3) " + $Lines.5 + "; (4) " + $Lines.6 + "; " + $Lines.7
+
+$Manifesto | Add-Member -Type NoteProperty -Name Content -Value $Content
+
+1 .. 7 | % {
+$Line = $Manifesto.Line.$_
+$Name = "Line" + $_
+$Manifesto | Add-Member -Type NoteProperty -Value $Line -Name $Name
+}
+
+$Manifesto | Add-Member -Type NoteProperty -Name Lines -Value $Lines
+
+oned
+cd Testing
+
+$Manifesto | ConvertTo-Json # Error'd
+$Manifesto_Json = [PSCustomObject]@{
+Title   = $Manifesto.Title
+Content = $Manifesto.Content
+Line1   = $Manifesto.Line1
+Line2   = $Manifesto.Line2
+Line3   = $Manifesto.Line3
+Line4   = $Manifesto.Line4
+Line5   = $Manifesto.Line5
+Line6   = $Manifesto.Line6
+Line7   = $Manifesto.Line7
+Lines   = @{
+1 = $Manifesto.Line1
+2 = $Manifesto.Line2
+3 = $Manifesto.Line3
+4 = $Manifesto.Line4
+5 = $Manifesto.Line5
+6 = $Manifesto.Line6
+7 = $Manifesto.Line7
+}
+}
+
+$Manifesto_Json | ConvertTo-Json # Error'd
+
+$Manifesto_Json = [PSCustomObject]@{
+Title   = $Manifesto.Title
+Content = $Manifesto.Content
+Line1   = $Manifesto.Line1
+Line2   = $Manifesto.Line2
+Line3   = $Manifesto.Line3
+Line4   = $Manifesto.Line4
+Line5   = $Manifesto.Line5
+Line6   = $Manifesto.Line6
+Line7   = $Manifesto.Line7
+Lines   = [PSCustomObject]@{
+1 = $Manifesto.Line1
+2 = $Manifesto.Line2
+3 = $Manifesto.Line3
+4 = $Manifesto.Line4
+5 = $Manifesto.Line5
+6 = $Manifesto.Line6
+7 = $Manifesto.Line7
+}
+}
+
+$Manifesto_Json | ConvertTo-JSON | Set-Content -Path AgileManifesto.json

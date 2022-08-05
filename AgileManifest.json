@@ -1,0 +1,30 @@
+{
+    "Title":  "Agile Manifesto",
+    "Content":  "We are uncovering better ways of developing software by doing it and helping others do it. Through this work we have come to value: (1) Individuals and interactions over processes and tools; (2) Working software over comprehensive documentation; (3) Customer collaboration over contract negotiation; (4) Responding to change over following a plan; That is, while there is value in the items on the right, we value the items on the left more.",
+    "Line1":  "We are uncovering better ways of developing software by doing it and helping others do it.",
+    "Line2":  "Through this work we have come to value:",
+    "Line3":  "Individuals and interactions over processes and tools",
+    "Line4":  "Working software over comprehensive documentation",
+    "Line5":  "Customer collaboration over contract negotiation",
+    "Line6":  "Responding to change over following a plan",
+    "Line7":  "That is, while there is value in the items on the right, we value the items on the left more.",
+    "Lines":  {
+                  "1":  "We are uncovering better ways of developing software by doing it and helping others do it.",
+                  "2":  "Through this work we have come to value:",
+                  "3":  "Individuals and interactions over processes and tools",
+                  "4":  "Working software over comprehensive documentation",
+                  "5":  "Customer collaboration over contract negotiation",
+                  "6":  "Responding to change over following a plan",
+                  "7":  "That is, while there is value in the items on the right, we value the items on the left more."
+              },
+    "Line":  [
+                 "Agile Manifesto",
+                 "We are uncovering better ways of developing software by doing it and helping others do it.",
+                 "Through this work we have come to value:",
+                 "Individuals and interactions over processes and tools",
+                 "Working software over comprehensive documentation",
+                 "Customer collaboration over contract negotiation",
+                 "Responding to change over following a plan",
+                 "That is, while there is value in the items on the right, we value the items on the left more."
+             ]
+}
