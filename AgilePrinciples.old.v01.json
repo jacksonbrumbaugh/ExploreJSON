@@ -1,0 +1,16 @@
+{
+  "Title" : "Principles Behind the Agile Manifesto",
+  "Intro" : "We follow these principles:",
+  "Principle1" : "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.",
+  "Principle2" : "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitve advantage.",
+  "Principle3" : "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.",
+  "Principle4" : "Business people and developers must work together daily throughout the project.",
+  "Principle5" : "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.",
+  "Principle6" : "The most efficient and effective method of converying information to and within a develoment team is face-to-face conversation.",
+  "Principle7" : "Working software is the primary measure of progress.",
+  "Principle8" : "Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.",
+  "Principle9" : "Continuous attention to technical excellence and good design enhances agility.",
+  "Principle10" : "Simplicity -- the art of maximizing the amount of work not done -- is essential.",
+  "Principle11" : "The best architechtures, requirements, and designs emerge from self-organizing teams.",
+  "Principle12" : "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly."
+}
